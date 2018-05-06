@@ -11,7 +11,19 @@
 		<p>{{greet('night')}}</p>
 		<a v-bind:href="website">protfolio of {{name}}</a>
 		<input type="text" name="" v-bind:value="name">
+		<p>my name is {{name}}</p>
 		<p v-html="websiteTag"></p>
+		<button @click="add(1)">add a year age</button>
+		<button @click="subtract(1)">subtract one year age</button>
+		<button v-on:dblclick="add(10)">add 10 year age</button>
+		<button v-on:dblclick="subtract(10)">subtract ten year age</button>
+
+		<h2>your age is {{age}}</h2>
+		<div id=canvas v-on:mousemove="updatedXY">
+
+			{{x}},{{y}}
+		</div>
+			
 
 	</div>
 <script src="app.js"></script>
