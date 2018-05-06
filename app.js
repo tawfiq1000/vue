@@ -27,7 +27,13 @@ new Vue({
 		},
 		click:function(){
 			 alert("u clicked me");
-		}
+		},
+		logName:function(){
+			console.log('u just put ur name');
+		},
+		logAge:function(){
+			console.log('u just put ur age');
+		},
 
 	}	
 	

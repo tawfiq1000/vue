@@ -24,6 +24,18 @@
 			{{x}},{{y}}
 		</div>
 		<a v-on:click.prevent="click" href="http://www.google.com">tawfiq imam website</a>
+		<label>name</label>
+		<input type="text" v-on:keyup="logName">
+		<label>age</label>
+		<input type="text" v-on:keyup="logAge">
+		<br>
+
+
+		<label>name</label>
+		<input type="text" v-on:keyup.enter="logName">
+		<label>age</label>
+		<input type="text" v-on:keyup.alt.enter="logAge">
+
 			
 
 	</div>
