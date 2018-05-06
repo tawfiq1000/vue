@@ -14,16 +14,20 @@ new Vue({
 
 		greet:function(time){
 			return "good "+time+" "+this.name;
+			console.log('a');
 		},
 		add:function(value){
 			return this.age+=value;
+			console.log('a');
 		},
 		subtract:function(value){
 			return this.age-=value;
+			console.log('a');
 		},
 		updatedXY:function(event){
 			this.x=event.offsetX;
 			this.y=event.offsetY;
+			console.log('a');
 		},
 		click:function(){
 			 alert("u clicked me");

@@ -10,7 +10,7 @@
 		<h1>{{name}}</h1>
 		<p>{{greet('night')}}</p>
 		<a v-bind:href="website">protfolio of {{name}}</a>
-		<input type="text" name="" v-bind:value="name">
+		<input type="text" name=""  v-model="name">
 		<p>my name is {{name}}</p>
 		<p v-html="websiteTag"></p>
 		<button @click.once="add(1)">add a year age</button>
