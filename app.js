@@ -43,3 +43,24 @@ new Vue({
 	
 
 });	
+
+
+new Vue({
+	el:'#vue-css',
+	data:{
+		available:false,
+		nearby:false,
+	},
+	methods:{
+
+	},
+	computed:{
+		compClasses:function(){
+			return{
+				available:this.available,
+				nearby:this.nearby,
+			}
+		}
+	}
+
+});
